@@ -1,5 +1,5 @@
 import { TypeOf, z } from 'zod';
-import { Role } from '../../generated/prisma';
+import { Role } from '../../generated/prisma/enums';
 
 export const updateRoleSchema = z.object({
     role: z.nativeEnum(Role),

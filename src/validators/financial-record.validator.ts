@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { RecordType } from '../../generated/prisma';
+import { RecordType } from '../../generated/prisma/enums';
 
 export const createRecordSchema = z.object({
     amount: z.number().positive(),
@@ -20,6 +20,6 @@ export const recordQueryScheam = z.object({
     limit: z.coerce.number().int().positive().max(100).optional(),
 });
 
-export type createRecordInput = z.infer<typeof createRecordSchema>;
-export type updateRecordInput = z.infer<typeof updateRecordSchema>;
-export type recordQueryInput = z.infer<typeof recordQueryScheam>;
+export type CreateRecordInput = z.infer<typeof createRecordSchema>;
+export type UpdateRecordInput = z.infer<typeof updateRecordSchema>;
+export type RecordQueryInput = z.infer<typeof recordQueryScheam>;
