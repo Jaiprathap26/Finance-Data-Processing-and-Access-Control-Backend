@@ -1,5 +1,5 @@
 import { inflateRaw } from 'node:zlib';
-import { Role } from '../..generated/prisma';
+import { Role } from '../..generated/prisma/enums';
 import { isInternalThread } from 'node:worker_threads';
 
 export interface JwtPayLoad {
