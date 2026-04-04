@@ -59,7 +59,7 @@ finance-dashboard-backend/
 ### Installation
 
 ``bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Jaiprathap26/Finance-Data-Processing-and-Access-Control-Backend.git
 cd finance-dashboard-backend
 npm install
 
@@ -106,6 +106,3 @@ Response Format
 { "success": false, "error": { "message": "description" } }
 License
 MIT
-
-
-Replace 'Jaiprathap' and '[https://github.com/Jaiprathap26/Finance-Data-Processing-and-Access-Control-Backend]' with your actual GitHub details before pushing.
